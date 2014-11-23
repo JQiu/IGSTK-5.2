@@ -1,0 +1,174 @@
+<metrology_system_settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi="noNamespace" format_version="9" >
+  <emmett format_version="1" >
+    <device initstate="1" type="baumer_acq" name="CamBar B2" >
+      <software_trigger>0</software_trigger>
+      <trace_log>
+        <enabled>0</enabled>
+        <file>bgapi_trace_log.log</file>
+      </trace_log>
+      <camera>
+        <serial_number>0068123810</serial_number>
+        <exposure_time>300</exposure_time>
+        <max_exposure_time>2500</max_exposure_time>
+        <master>1</master>
+        <image_format_id>0</image_format_id>
+        <flash>1</flash>
+        <packet_delay_ticks>50</packet_delay_ticks>
+        <trigger_delay>0</trigger_delay>
+      </camera>
+      <camera>
+        <serial_number>0068153810</serial_number>
+        <exposure_time>500</exposure_time>
+        <max_exposure_time>2500</max_exposure_time>
+        <master>0</master>
+        <image_format_id>1</image_format_id>
+        <flash>0</flash>
+        <packet_delay_ticks>50</packet_delay_ticks>
+        <partial_scan>
+          <enabled>0</enabled>
+          <left>0</left>
+          <top>0</top>
+          <right>776</right>
+          <bottom>580</bottom>
+        </partial_scan>
+      </camera>
+    </device>
+    <device initstate="1" type="a3m" name="BlitzController" >
+      <configuration>
+        <duration>600</duration>
+        <intensity>2000</intensity>
+        <delay>0</delay>
+        <edge_rising>1</edge_rising>
+        <temperature_interval>10000</temperature_interval>
+        <flashing_time_from_start_led_0>60000</flashing_time_from_start_led_0>
+        <flashing_time_from_start_led_1>3000</flashing_time_from_start_led_1>
+      </configuration>
+    </device>
+  </emmett>
+  <bunseki>
+    <measurementvolume>
+      <use type="pyramid" >
+        <pyramid>
+          <r00>1.0</r00>
+          <r01>0.0</r01>
+          <r02>0.0</r02>
+          <r10>0.0</r10>
+          <r11>1.0</r11>
+          <r12>0.0</r12>
+          <r20>0.0</r20>
+          <r21>0.0</r21>
+          <r22>1.0</r22>
+          <translation_x>0.0</translation_x>
+          <translation_y>0.0</translation_y>
+          <translation_z>-500.0</translation_z>
+          <a>900.0</a>
+          <b>800.0</b>
+          <c>150.0</c>
+          <d>150.0</d>
+          <h>1000.0</h>
+        </pyramid>
+      </use>
+      <clippingplanemax>2000.0</clippingplanemax>
+    </measurementvolume>
+    <acc_classes>
+      <point ok_border="4" >
+        <_3drms>
+          <class id="1" >0.2</class>
+          <class id="2" >0.3</class>
+          <class id="3" >0.375</class>
+          <class id="4" >0.45</class>
+        </_3drms>
+        <img>
+          <class id="1" >0.04</class>
+          <class id="2" >0.05</class>
+          <class id="3" >0.07</class>
+          <class id="4" >0.09</class>
+        </img>
+      </point>
+      <locator ok_border="4" >
+        <trafo>
+          <class id="1" >0.075</class>
+          <class id="2" >0.1</class>
+          <class id="3" >0.2</class>
+          <class id="4" >0.4</class>
+        </trafo>
+        <adjustment>
+          <class id="1" >0.1</class>
+          <class id="2" >0.2</class>
+          <class id="3" >0.35</class>
+          <class id="4" >0.5</class>
+        </adjustment>
+        <img>
+          <class id="1" >0.05</class>
+          <class id="2" >0.10</class>
+          <class id="3" >0.15</class>
+          <class id="4" >0.25</class>
+        </img>
+      </locator>
+    </acc_classes>
+    <pointanalysis>
+      <max3drms>0.8</max3drms>
+    </pointanalysis>
+    <locatoranalysis>
+      <minpointfactorforresolution>0.75</minpointfactorforresolution>
+    </locatoranalysis>
+  </bunseki>
+  <kuva>
+    <maximagepointrms>1.0</maximagepointrms>
+    <uselastpointsforapproximation>0</uselastpointsforapproximation>
+    <approximation>
+      <use approx_type="circleapproximation" conclusion_type="ellipsemeasurement" >
+        <circleapproximation>
+          <circleapproximation>
+            <binarisation>1</binarisation>
+            <blackobjects>0</blackobjects>
+            <backgroundcolour>30</backgroundcolour>
+            <mincentercolour>0</mincentercolour>
+            <minsize>2</minsize>
+            <maxsize>25</maxsize>
+            <maxneighbourdistance>1.5</maxneighbourdistance>
+            <mingradient>10</mingradient>
+            <pixelstepx>1</pixelstepx>
+            <pixelstepy>1</pixelstepy>
+          </circleapproximation>
+        </circleapproximation>
+        <ellipsemeasurement>
+          <ellipsecross>
+            <blackobjects>0</blackobjects>
+            <nearingdistance>10.0</nearingdistance>
+            <filtersize>1</filtersize>
+            <iterthreshold>1.0E-2</iterthreshold>
+            <miniterations>3</miniterations>
+            <maxiterations>6</maxiterations>
+            <finishingdistance>3.0</finishingdistance>
+            <minratio>0.2</minratio>
+            <interpolation>1</interpolation>
+            <ellipsenumerator>2.0</ellipsenumerator>
+            <mincrosses>4</mincrosses>
+            <maxcrosses>5</maxcrosses>
+          </ellipsecross>
+        </ellipsemeasurement>
+      </use>
+    </approximation>
+    <conclusion>
+      <use type="ellipsemeasurement" >
+        <ellipsemeasurement>
+          <ellipsecross>
+            <blackobjects>0</blackobjects>
+            <nearingdistance>1.8</nearingdistance>
+            <filtersize>2</filtersize>
+            <iterthreshold>1.0E-4</iterthreshold>
+            <miniterations>4</miniterations>
+            <maxiterations>12</maxiterations>
+            <finishingdistance>1.2</finishingdistance>
+            <minratio>0.4</minratio>
+            <interpolation>1</interpolation>
+            <ellipsenumerator>1.4</ellipsenumerator>
+            <mincrosses>6</mincrosses>
+            <maxcrosses>16</maxcrosses>
+          </ellipsecross>
+        </ellipsemeasurement>
+      </use>
+    </conclusion>
+  </kuva>
+</metrology_system_settings>

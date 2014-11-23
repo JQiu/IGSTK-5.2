@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- all units are mm -->
+<!-- Format version -->
+<locatordefinitions version="1" >
+	<locator id="DIGITIZED">
+		<parameter>
+			<min_targets>3</min_targets>
+			<matching_threshold>3.79355</matching_threshold>
+		</parameter>
+		<targets>
+			<target id="1">
+				<position>
+					<x>0</x>
+					<y>0</y>
+					<z>0</z>
+				</position>
+			</target>
+			<target id="2">
+				<position>
+					<x>113.142</x>
+					<y>-1.11022e-015</y>
+					<z>-3.55271e-015</z>
+				</position>
+			</target>
+			<target id="3">
+				<position>
+					<x>113.277</x>
+					<y>108.08</y>
+					<z>-3.55271e-015</z>
+				</position>
+			</target>
+			<target id="4">
+				<position>
+					<x>13.4326</x>
+					<y>129.951</y>
+					<z>-0.952616</z>
+				</position>
+			</target>
+		</targets>
+	</locator>
+</locatordefinitions>

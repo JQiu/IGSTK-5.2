@@ -1,0 +1,82 @@
+<metrology_calibration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi="noNamespace" format_version="4" >
+  <set temperature="41.9" time="11:00:00" date="2010-10-14" >
+    <camera name="1" >
+      <ior type="1" >
+        <projection>
+          <c unit="mm" >-7.98741</c>
+          <temperature_correction_factor>0.00000</temperature_correction_factor>
+        </projection>
+        <distortion>
+          <a1>-0.000765237</a1>
+          <a2>5.01215e-05</a2>
+          <a3>-5.58978e-08</a3>
+          <b1>4.96812e-05</b1>
+          <b2>5.50277e-05</b2>
+          <c1>4.41422e-05</c1>
+          <c2>-8.14766e-05</c2>
+          <ppx unit="mm" >0.247173</ppx>
+          <ppy unit="mm" >0.20349</ppy>
+          <r0 unit="mm" >2.5</r0>
+        </distortion>
+        <sensor>
+          <esx unit="mm" >0.0083</esx>
+          <esy unit="mm" >0.0083</esy>
+          <ssx unit="pix" >776</ssx>
+          <ssy unit="pix" >582</ssy>
+        </sensor>
+      </ior>
+      <eor>
+        <rotation transpose="1" >
+          <rz unit="deg" >90</rz>
+          <rx unit="rad" >0</rx>
+          <ry unit="rad" >0</ry>
+          <rz unit="rad" >0</rz>
+        </rotation>
+        <translation>
+          <y unit="mm" >-100.01285</y>
+          <x unit="mm" >-0.26615</x>
+          <z unit="mm" >0.21395</z>
+        </translation>
+      </eor>
+    </camera>
+    <camera name="2" >
+      <ior type="1" >
+        <projection>
+          <c unit="mm" >-7.96211</c>
+          <temperature_correction_factor>0.000000</temperature_correction_factor>
+        </projection>
+        <distortion>
+          <a1>-0.000731853</a1>
+          <a2>4.6205e-05</a2>
+          <a3>1.95616e-07</a3>
+          <b1>-2.42443e-05</b1>
+          <b2>-6.55114e-05</b2>
+          <c1>-0.000127971</c1>
+          <c2>9.41474e-05</c2>
+          <ppx unit="mm" >-0.0336455</ppx>
+          <ppy unit="mm" >-0.0301229</ppy>
+          <r0 unit="mm" >2.5</r0>
+        </distortion>
+        <sensor>
+          <esx unit="mm" >0.0083</esx>
+          <esy unit="mm" >0.0083</esy>
+          <ssx unit="pix" >776</ssx>
+          <ssy unit="pix" >582</ssy>
+        </sensor>
+      </ior>
+      <eor>
+        <rotation transpose="1" >
+          <rz unit="deg" >90</rz>
+          <rx unit="rad" >-0.0006494</rx>
+          <ry unit="rad" >0.00128569</ry>
+          <rz unit="rad" >0.00015725</rz>
+        </rotation>
+        <translation>
+          <y unit="mm" >100.01285</y>
+          <x unit="mm" >0.26615</x>
+          <z unit="mm" >-0.21395</z>
+        </translation>
+      </eor>
+    </camera>
+  </set>
+</metrology_calibration>

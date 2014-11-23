@@ -1,0 +1,6 @@
+<sys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi="noNamespace" >
+  <name>CamBar B2</name>
+  <sn>B2S-005</sn>
+  <rev>1.0.0</rev>
+  <cfg cal="metro_calibration.xml" set="metro_system_settings.xml" id="1" />
+</sys>
